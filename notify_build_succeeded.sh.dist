@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# https://github.com/Doerge/xcode-slack-notifier
+# Replace the url below with your private incoming Slack webhook, and choose this script in the Xcode preferences.
+curl -X POST -H 'Content-type: application/json' \
+--data '{"text":"Your build finished successfully :pray:"}' \
+https://hooks.slack.com/services/XXXXXXXXX/YYYYYYYYY/ZZZZZZZZZZZZZZZZZZZZZZZZ
