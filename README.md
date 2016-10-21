@@ -3,7 +3,7 @@
 
 Hit the coffee machine while Xcode builds, and get a notification on Slack when it completes!
 
-# Slack
+# Slack Setup
 * Setup an incoming webhook to a private channel here: https://dubsmash.slack.com/apps/A0F7XDUAZ-incoming-webhooks
 * Copy the webhook url
 ![screen shot 2016-10-21 at 11 12 45](https://cloud.githubusercontent.com/assets/3216279/19593285/20d5303e-9780-11e6-93ac-eb672c1adf67.png)
