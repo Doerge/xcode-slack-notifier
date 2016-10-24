@@ -4,8 +4,8 @@
 Hit the coffee machine while Xcode builds, and get a notification on Slack when it completes!
 
 # Slack Setup
-* Setup an incoming webhook to a private channel here: https://dubsmash.slack.com/apps/A0F7XDUAZ-incoming-webhooks
-* Copy the webhook url
+* Setup an _incoming webhook_ to a private channel with yourself [here](https://dubsmash.slack.com/apps/A0F7XDUAZ-incoming-webhooks). If you do not have the rights yourself you have to request it. Someone on your team with Slack admin rights will then have to grant you access.
+* Copy the webhook url.
 ![screen shot 2016-10-21 at 11 12 45](https://cloud.githubusercontent.com/assets/3216279/19593285/20d5303e-9780-11e6-93ac-eb672c1adf67.png)
 
 
@@ -15,7 +15,7 @@ We will generate two scripts: `notify_build_succeeded.sh` and `notify_build_fail
 ```
 git clone git@github.com:Doerge/xcode-slack-notifier.git
 cd xcode-slack-notifier
-./replace_webhook_url.sh <custom-slack-url>
+./replace_webhook_url.sh <custom-webhook-url>
 ```
 Either put the generated scripts in your favorite scripts directory or keep the repo around.
 
