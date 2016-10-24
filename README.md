@@ -10,6 +10,7 @@ Hit the coffee machine while Xcode builds, and get a notification on Slack when 
 
 
 # Local Setup
+## Scripts
 We will generate two scripts: `notify_build_succeeded.sh` and `notify_build_failed.sh` which Xcode can use to notify us. With the custom webhook url from above execute:
 ```
 git clone git@github.com:Doerge/xcode-slack-notifier.git
@@ -18,6 +19,7 @@ cd xcode-slack-notifier
 ```
 Either put the generated scripts in your favorite scripts directory or keep the repo around.
 
+## Xcode
 ![screen shot 2016-10-20 at 14 05 48](https://cloud.githubusercontent.com/assets/3216279/19591371/0110b7cc-9777-11e6-97d0-555d929fdaba.png)
 
 Go to Xcode preferences (`Cmd` + `,`) `Behaviors/Succeeds/Run/Choose Script` and point it to the `notify_build_succeeded.sh` script which was generated above. Repeat for `Behaviors/Failed/Run/Choose Script` and `notify_build_failed.sh`.
